@@ -1,16 +1,22 @@
-#MCollective Facter Fact Source
+# MCollective Facter Fact Source
 
-##Overview
+## Deprecation Notice
+
+This repository holds legacy code related to The Marionette Collective project.  That project has been deprecated by Puppet Inc and the code donated to the Choria Project.
+
+Please review the [Choria Project Website](https://choria.io) and specifically the [MCollective Deprecation Notice](https://choria.io/mcollective) for further information and details about the future of the MCollective project.
+
+## Overview
 
 The facter plugin enables mcollective to use facter as a source for facts about your system.
 
 Note: This method suffers from some issues due to how slow Facter can be in some cases, you should use [Facter via YAML](http://projects.puppetlabs.com/projects/mcollective-plugins/wiki/FactsFacterYAML) instead.
 
-##Installation
+## Installation
 
 * Follow the [basic plugin install guide](http://projects.puppetlabs.com/projects/mcollective-plugins/wiki/InstalingPlugins)
 
-##Configuration
+## Configuration
 
 The following options can be set in server.cfg
 
@@ -24,7 +30,7 @@ plugin.facter.facterlib = /var/lib/puppet/lib/otherfacts
 fact_cache_time = 200
 ```
 
-##Usage
+## Usage
 
 You should now be able to use all your facter facts in discovery and fact reporting.
 
